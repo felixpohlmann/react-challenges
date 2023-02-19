@@ -1,0 +1,43 @@
+.element
+  .content
+    background-color: lightgrey
+    border: 1px solid black
+    border-radius: 0.5rem
+    height: 200px
+    width: 200px
+    display: flex
+    justify-content: center
+    align-items: center
+    box-shadow: -2px -2px 0px grey inset
+
+    input
+      text-align: center
+      width: auto
+      background: none
+      border: none
+
+
+  .click-area
+    background-color: white
+    border: 1px solid black
+    position: relative
+    width: 40px
+    height: 100px
+    bottom: 150px
+    border-radius: 30px
+    right: 20px
+    opacity: 0
+    transition: 0.2s ease-in-out all
+    display: flex
+    justify-content: center
+    align-items: center
+    font-size: 30px
+    cursor: pointer
+    box-shadow: -2px -2px 0px grey inset
+
+.element .content:hover + .click-area, .click-area:hover
+  opacity: 100
+
+.click-area:hover
+  
+  
